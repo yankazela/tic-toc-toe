@@ -1,0 +1,9 @@
+CoGrammer Written Assessment				
+****************************
+
+Candidate Fullname: YANNICK KAZELA KAZADI
+Tasks attempted:
+	
+  1. Python - Task 2 Recursion (file: recursion.py)
+  2. Java: Task 1 Multidimensional Arrays (folder: CoGrammarTic-Toc-Toe-Yannick)
+  3. Web Dev: Task 3 Web dev marking test (file: WebDevMarkingTask.txt)

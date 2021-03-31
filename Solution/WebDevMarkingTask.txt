@@ -1,0 +1,20 @@
+	Javascript task 3: Web Dev Marking Task
+	**************************************
+
+       Hi There,
+       I have reviewed you code and come up with the following suggestions to help you fix the overlapping issue:
+ 
+       1. In your css you set the properties left and top to 0, however to move the image you are testing the JQuery property position().left.
+	  You must note that there is a difference between the css left and the JQuery position().left (or css top and JQuery postion().top) 
+	  these two properties do not usually have the same value as the of position().left can be different to the css left depending on the browser used.
+	  So I will advise you to use parseInt($('img').css('left'), 10) instead of $('img').position().left ( this also applies to css top and JQuery postion().top).
+
+       2. When you are moving the image, you also need to consider its width (when moving to the right) and its height (when moving to the bottom).
+          The image should be able to move to the right only if its css left value plus its width is less than the screen width and it can move to
+          the bottom only if its css top plus its height is less than the screen height.
+
+       3. To be able to move the image to the left, its css left value should be greater than zero and to move to the top the css top must also be greater than zero.
+
+       4.  When moving the image, you need to increment or decrement the css left or top (depending on the movement) instead of the JQuery animate properties (left or top).
+
+
